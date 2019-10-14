@@ -7,7 +7,6 @@
 import numpy as np
 from sklearn.cluster import KMeans
 import pandas as pd
-import gensim
 import warnings
 
 
@@ -33,7 +32,6 @@ original_df = pd.DataFrame(df)
 # In[18]:
 
 
-print(original_df)
 
 
 # In[19]:
@@ -61,8 +59,7 @@ for i, row in df.iterrows():
         company_vectorized_mean = list(np.zeros(100))
     temp_row = np.asarray(company_vectorized_mean)
     final_data.append(temp_row)
-X = np.asarray(final_data)
-print('complete') 
+X = np.asarray(final_data) 
 
 
 # In[20]:
